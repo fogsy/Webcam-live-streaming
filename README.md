@@ -12,6 +12,6 @@ npm install
 ```
 
 ```sh
-node app.js
+node index.js.    // The server will be up in http://localhost:3000
 ```
 
