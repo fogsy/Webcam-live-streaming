@@ -6,7 +6,7 @@ const io= require("socket.io").listen(server)
 const cv = require("opencv4nodejs")
 
 const FPS=30
-const videoCapture =new cv.VideoCapture(0)
+const videoCapture =new cv.VideoCapture(0)   //0 is used to access the webcam, you can change it according to your capturing device
 videoCapture.set(cv.CAP_PROP_FRAME_HEIGHT,300)
 videoCapture.set(cv.CAP_PROP_FRAME_WIDTH,300)
 
