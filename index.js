@@ -21,10 +21,7 @@ app.get("/",(req,res)=>{
 setInterval(()=>{
     const frame= videoCapture.read()
     const image=cv.imencode(".jpg",frame).toString("base64")
-  
     io.emit('image',image)
-
- 
 },1000/FPS)
 
 

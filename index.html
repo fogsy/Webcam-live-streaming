@@ -1,8 +1,6 @@
 <html>
 <body>
-
-        <link rel="shortcut icon" href="#" />
-
+    <link rel="shortcut icon" href="#" />
     <img id="image">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
    <script>
@@ -11,9 +9,7 @@
        sockett.on('image',(image)=>{
            const imageele = document.getElementById("image") 
            imageele.src=`data:image/jpeg;base64,${image}`
-
         })
-       
     </script>
 </body>
 
